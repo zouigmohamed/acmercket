@@ -1,6 +1,6 @@
 import { useState } from "react";
 const Header = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <>
       <header className="bg-teal-700 text-white sticky top-0 z-10 ">
@@ -14,7 +14,7 @@ const Header = () => {
               onClick={() => setOpen(!open)}
               className="text-3xl sm:hidden focus:outline-none hover:bg-teal-600 rounded-full w-10 h-10 flex place-content-center "
             >
-               {!open ? (<>&#9776;</>) : (<>&times;</>)}
+               {open ? (<>&#9776;</>) : (<>&times;</>)}
             </button>
             <nav
               className="hidden sm:block space-x-8 text-xl"
