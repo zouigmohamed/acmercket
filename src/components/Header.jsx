@@ -14,7 +14,7 @@ const Header = () => {
               onClick={() => setOpen(!open)}
               className="text-3xl sm:hidden focus:outline-none hover:bg-teal-600 rounded-full w-10 h-10 flex place-content-center "
             >
-               {!open ? (<>&#9776;</>) : (<>&times;</>)}
+              {!open ? <>&#9776;</> : <>&times;</>}
             </button>
             <nav
               className="hidden sm:block space-x-8 text-xl"
@@ -38,38 +38,43 @@ const Header = () => {
             open ? "block" : "hidden"
           } w-full origin-top animate-open-menu flex-col bg-black text-5xl`}
         >
-
           <nav
             className="flex min-h-screen flex-col items-center py-8"
             aria-label="mobile"
+            onClick={() => setOpen(false)}
           >
             <a
               href="#hero"
               className="w-full py-6 text-center hover:opacity-90"
-            >
+              onClick={() => setOpen(false)}
+              >
               Home
             </a>
             <a
               href="#rockets"
               className="w-full py-6 text-center hover:opacity-90"
-            >
+              onClick={() => setOpen(false)}
+              >
               Our Rockets
             </a>
             <a
               href="#testimonials"
               className="w-full py-6 text-center hover:opacity-90"
-            >
+              onClick={() => setOpen(false)}
+              >
               Testimonials
             </a>
             <a
               href="#contact"
               className="w-full py-6 text-center hover:opacity-90"
-            >
+              onClick={() => setOpen(false)}
+              >
               Contact Us
             </a>
             <a
               href="#footer"
               className="w-full py-6 text-center hover:opacity-90"
+              onClick={() => setOpen(false)}
             >
               Legal
             </a>
