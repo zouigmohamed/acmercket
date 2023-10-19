@@ -4,30 +4,34 @@ const Header = () => {
   return (
     <>
       <header className="bg-teal-700 text-white sticky top-0 z-10 ">
-        <section className="max-w-full mx-auto p-4 flex justify-between items-center px-20 sm:px-9">
-          <h1 className="text-3xl font-medium">
+        <section className="max-w-full mx-auto py-4 flex justify-between items-center px-5 sm:px-4 md:px-8">
+          <h1 className="text-2xl sm:text-3xl font-medium">
             <a href="#hero"> 🚀 Acme Rocket</a>
           </h1>
           <div>
             <button
               id="#mobile-open-button"
               onClick={() => setOpen(!open)}
-              className="text-3xl sm:hidden focus:outline-none hover:bg-teal-600 rounded-full w-10 h-10 flex place-content-center "
+              className="text-3xl sm sm:hidden focus:outline-none hover:bg-teal-600 rounded-full w-10 h-10 flex place-content-center "
             >
               {!open ? <>&#9776;</> : <>&times;</>}
             </button>
             <nav
-              className="hidden sm:block space-x-8 text-xl"
-              aria-label="main"
+              className="hidden sm:block  space-x-3 md:space-x-10  sm:space-x-2  md:bg-red-500 capitalize text-xl"
+                          aria-label="main"
+                          
             >
+              <a href="#hero" className="hover:opacity-90">
+                home
+              </a>
               <a href="#rockets" className="hover:opacity-90">
-                our rockets
+                Our Rockets
               </a>
               <a href="#testimonials" className="hover:opacity-90">
                 Testimonials
               </a>
-              <a href="#contact" className="hover:opacity-90">
-                contact
+              <a href="#contact" className="hover:opacity-90 ">
+                Contact
               </a>
             </nav>
           </div>
