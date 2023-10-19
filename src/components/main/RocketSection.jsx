@@ -1,4 +1,6 @@
-
+import img1 from "../../../public/rocketman.png"
+import img2 from "../../../public/rocketride.png"
+import img3 from "../../../public/rocketlaunch.png"
 const RocketSection = () => {
   return (
     <>
@@ -9,7 +11,7 @@ const RocketSection = () => {
           <ul className="list-none gap-2 mx-auto my-12 flex items-center  justify-center flex-col sm:flex-row">
             <li className=" w-2/3 mb-4  sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
               <img
-                src="../../../public/rocketman.png"
+                src={img1}
                 alt="explorer"
                 className="w-1/2"
               />
@@ -25,7 +27,7 @@ const RocketSection = () => {
             </li>
             <li className=" w-2/3 mb-4 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
               <img
-                src="../../../public/rocketride.png"
+                src={img2}
                 alt="adventure"
                 className="w-1/2"
               />
@@ -41,7 +43,7 @@ const RocketSection = () => {
             </li>
             <li className=" w-2/3 mb-4 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
               <img
-                src="../../../public/rocketlaunch.png"
+                src={img3}
                 alt="infinity"
                 className="w-1/2"
               />

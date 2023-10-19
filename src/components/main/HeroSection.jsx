@@ -1,3 +1,4 @@
+import img from "../../../public/rocketdab.png"
 const HeroSection = () => {
   return (
     <>
@@ -21,7 +22,7 @@ const HeroSection = () => {
             Think Acme Rocket.
           </p>
         </article>
-        <img className="w-1/2" src="../../../public/rocketdab.png" alt="rocket dab" />
+        <img className="w-1/2" src={img} alt="rocket dab" />
       </section>
     </>
   );
