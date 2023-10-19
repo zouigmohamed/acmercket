@@ -14,7 +14,7 @@ const Header = () => {
               onClick={() => setOpen(!open)}
               className="text-3xl sm:hidden focus:outline-none hover:bg-teal-600 rounded-full w-10 h-10 flex place-content-center "
             >
-               {open ? (<>&#9776;</>) : (<>&times;</>)}
+               {!open ? (<>&#9776;</>) : (<>&times;</>)}
             </button>
             <nav
               className="hidden sm:block space-x-8 text-xl"
