@@ -17,7 +17,7 @@ const Header = () => {
               {!open ? <>&#9776;</> : <>&times;</>}
             </button>
             <nav
-              className="hidden sm:block  space-x-3 md:space-x-10  sm:space-x-2  md:bg-red-500 capitalize text-xl"
+              className="hidden sm:block  space-x-3 md:space-x-10  sm:space-x-2  capitalize text-xl"
                           aria-label="main"
                           
             >
