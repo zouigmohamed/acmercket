@@ -6,7 +6,7 @@ const Header = () => {
       <header className="bg-teal-700 text-white sticky top-0 z-10 ">
         <section className="max-w-full mx-auto py-4 flex justify-between items-center px-5 sm:px-4 md:px-8">
           <h1 className="text-2xl sm:text-3xl font-medium">
-            <a href="#hero"> 🚀 Acme Rocket</a>
+            <a href="#hero" onClick={() => setOpen(false)}> 🚀 Acme Rocket</a>
           </h1>
           <div>
             <button
